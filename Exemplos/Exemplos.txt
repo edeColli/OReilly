@@ -1,0 +1,61 @@
+useState():
+O useState() é um hook do React que permite que você adicione estado a um componente funcional. 
+O estado é uma forma de armazenar dados que podem ser atualizados e usados ​​para renderizar o componente novamente com 
+novas informações. Com o useState(), você pode definir uma variável de estado e uma função para atualizar esse estado. Q
+uando a função de atualização é chamada, o componente é renderizado novamente com o novo estado.
+
+useReducer():
+O useReducer é outro hook do React que permite que você gerencie o estado de um componente de forma mais complexa. 
+É útil quando você tem um estado que precisa ser atualizado por meio de várias ações diferentes. 
+Com o useReducer, você define uma função de redução que manipula o estado com base na ação recebida. 
+Isso permite que você escreva código mais legível e mantenha o estado de forma mais organizada.
+
+useContext():
+O useContext é um hook do React que permite que você compartilhe dados entre componentes sem precisar passar esses dados 
+por meio de props. Com o useContext, você pode criar um objeto de contexto que contém os dados que você deseja 
+compartilhar e, em seguida, acessar esses dados de qualquer componente que esteja dentro desse contexto. 
+Isso ajuda a simplificar o código e tornar mais fácil o compartilhamento de informações entre componentes.
+
+useEffect():
+O useEffect é um hook do React que permite que você execute código em resposta a mudanças no componente. 
+Com o useEffect, você pode definir uma função que é executada sempre que o componente é renderizado novamente ou 
+quando certas variáveis de estado são atualizadas. Isso é útil para executar ações como fazer chamadas de API, 
+atualizar o DOM ou limpar recursos quando o componente é desmontado.
+
+React.Memo():
+O React.memo é um recurso do React que otimiza o desempenho dos componentes, evitando que sejam renderizados 
+desnecessariamente. 
+Ele pode ser usado para evitar renderizações desnecessárias de componentes quando suas propriedades não mudam.
+
+
+
+Alguns dos principais Hooks do React são:
+
+useState: permite adicionar estados em componentes funcionais;
+useEffect: permite executar efeitos colaterais (como chamadas de API) em componentes funcionais;
+useContext: permite acessar contextos em componentes funcionais;
+useReducer: permite gerenciar estados complexos e atualizá-los com base em ações em componentes funcionais;
+useCallback: permite criar funções memoizadas para evitar renderizações desnecessárias em componentes filhos;
+useMemo: permite memoizar valores para evitar cálculos desnecessários em componentes funcionais;
+useRef: permite acessar e manipular nós do DOM em componentes funcionais;
+useLayoutEffect: permite executar efeitos colaterais síncronos (antes da renderização) em componentes funcionais;
+useImperativeHandle: permite expor funções específicas de um componente filho para o componente pai;
+useDebugValue: permite exibir valores personalizados em ferramentas de desenvolvedor para facilitar a depuração.
+Esses são apenas alguns dos principais Hooks disponíveis no React, mas há muitos outros disponíveis na biblioteca. 
+
+Cada um deles tem uma finalidade específica e pode ajudar a tornar o desenvolvimento de componentes funcionais 
+mais fácil e eficiente.
+
+
+NextJS
+O getStaticProps e getServerSideProps é uma função usada no Next.js para pré-renderizar páginas estáticas com dados dinâmicos em tempo de construção (build time). 
+Isso significa que quando você acessa uma página com getStaticProps ou getServerSideProps, o Next.js irá buscar os dados necessários para renderizar essa página e, em seguida, 
+criar uma versão estática dessa página com os dados já incluídos.
+Essa função é útil quando você tem páginas que precisam exibir dados que mudam com pouca frequência, mas que ainda precisam ser atualizados regularmente. 
+O getStaticProps permite que você atualize os dados dinâmicos sem precisar re-renderizar a página toda vez que ela é acessada.
+A função getStaticProps é chamada no processo de build do Next.js e retorna um objeto com as props que serão passadas para a página. 
+Você pode usar essa função para buscar dados de uma API externa, fazer consultas em um banco de dados, ler arquivos do sistema de arquivos ou qualquer outra coisa que possa retornar 
+dados para serem incluídos na página.
+Uma vez que a página é construída, o Next.js irá servir essa página estática para todos os usuários que acessarem a página. Isso significa que a página será renderizada mais rapidamente, 
+pois não precisa buscar os dados dinâmicos toda vez que é acessada.
+São funções executadas sempre no servidor e nunca no cliente, então todo o codigo que estiver ali não sera exporto para o clientSide
